@@ -44,7 +44,7 @@ export default function TaskInput({ onAddTask }) {
   };
 
   return (
-    <section className="rounded-3xl bg-white p-5 shadow-lg shadow-slate-200/70 ring-1 ring-slate-200 sm:p-6">
+    <section className="glass-panel rounded-3xl p-5 sm:p-6">
       <div className="space-y-4">
         <div>
           <label
@@ -60,7 +60,7 @@ export default function TaskInput({ onAddTask }) {
             onChange={(event) => updateField("title", event.target.value)}
             onKeyDown={handleTitleKeyDown}
             placeholder="What do you want to get done?"
-            className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100"
+            className="glass-input w-full rounded-2xl px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
@@ -77,7 +77,7 @@ export default function TaskInput({ onAddTask }) {
             value={form.note}
             onChange={(event) => updateField("note", event.target.value)}
             placeholder="Optional note or reminder"
-            className="w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100"
+            className="glass-input w-full resize-none rounded-2xl px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
@@ -93,7 +93,7 @@ export default function TaskInput({ onAddTask }) {
             type="date"
             value={form.startDate}
             onChange={(event) => updateField("startDate", event.target.value)}
-            className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100"
+            className="glass-input w-full rounded-2xl px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
@@ -109,14 +109,14 @@ export default function TaskInput({ onAddTask }) {
             type="date"
             value={form.deadlineDate}
             onChange={(event) => updateField("deadlineDate", event.target.value)}
-            className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:bg-white focus:ring-4 focus:ring-blue-100"
+            className="glass-input w-full rounded-2xl px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
         <button
           type="button"
           onClick={handleSubmit}
-          className="w-full rounded-2xl bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300"
+          className="glass-button w-full rounded-2xl px-4 py-3 font-semibold text-slate-900 transition hover:bg-white/50 focus:outline-none focus:ring-4 focus:ring-white/50"
         >
           Add Task
         </button>
